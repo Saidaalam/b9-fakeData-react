@@ -1,49 +1,55 @@
-
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-
 .main-container{
   display: flex;
-  justify-content:space-around;
-
+  justify-content: space-around;
 }
-.cart{
-  width: 300px;
-  box-shadow: 4px 4px 8px gray;
+.cart-container{
+  width: 400px;
+  border: 2px solid rgb(226, 225, 225);
+  border-radius: 20px;
+}
+.cards-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
 }
 .card{
-  border: 1px solid gray;
-  width: 200px;
-  height: 300px;
-  text-align: center;
+  width: 400px;
+  border: 2px solid rgb(226, 225, 225);
+  padding: 20px;
 }
-img{
-  width: 50px;
+.card li{
+  list-style: disc;
+  margin-left: 50px;
+  margin-top: 5px;
 }
-.footer-container{
+.card-img{
+  width: 150px;
+}
+.cart-title{
+  display: flex;
+  gap: 55px;
+  margin-left: 20px;
+}
+.cart-item{
+  margin-top: 12px;
   display: flex;
   justify-content: space-around;
-}
-.add-btn{
-  background-color:aquamarine;
-  padding: 10px 10px;
-  border: none;
-  cursor: pointer;
-}
 
-.cards{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
 }
-.cart-items{
+.hero{
+  background-image: url(./images/bannar.png);
+}
+.cart{
+  width: 400px;
+  display: block;
+}
+.cart-footer{
   display: flex;
-  justify-content: space-around;
+  column-gap: 120px;
+  margin-top: 15px;
+  font-size: 18px;
+}
+.cart-footer p{
+  display: flex;
+  gap: 10px;
 }
